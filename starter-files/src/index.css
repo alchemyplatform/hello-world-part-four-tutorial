@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;  
+    font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#container {
+  width: 80vh;
+ border: 4px dashed rgba(4, 4, 5, 0.1);
+    min-height: 140px;
+    padding: 32px;
+    position: relative;
+    border-radius: 16px;
+    -webkit-box-align: center;
+    align-items: left;
+    -webkit-box-pack: center;
+    justify-content: left;
+    flex-direction: column;
+    text-align:left;
+    word-break: break-word;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  font-size: 16px;
+  width: 80%;
+  border-color: rgba(4, 4, 5, 0.1);
+  line-height: 32px;
+  margin: none;
+}
+
+#status {
+  color:  #254cdd;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button {
+  padding: 9px 16px;
+  max-height: 40px;
+  *box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);
+  border-color:  #254cdd ;
+  border: none;
+  background: none;
+  color:white;
+  background-color: #254cdd;
+  border-radius: 6px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-weight: bold;
+  cursor:pointer;
+  min-width: 160px;
+  margin-top: 70px;
+  font-family: Rubik, sans-serif;
+}
+
+#logo {
+  float:left;
+  display: flex;
+  margin-left: -10px;
+  margin-top: -16px;
+  width: 210px;
+}
+
+#walletButton {
+  padding: 7px 16px;
+  background-color: white;
+  float:right;
+  border: 2px solid #254cdd ;
+  color:#254cdd;
+  margin-top: 0px;
+
+}
+h2{
+  display: block;
+  clear:both;
+  font-weight:400;
+}
+
+a {
+  color:#254cdd
+}
