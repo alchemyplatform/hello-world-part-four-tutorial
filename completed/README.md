@@ -10,7 +10,7 @@ To use this dApp, you'll need to do the following:
 3. Create a `.env` file in the root directory this `nft-minter` by entering the following on your command line: `vim .env` and then add your [Alchemy API Key](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/creating-a-full-stack-dapp#establish-an-api-connection-to-the-ethereum-chain). Altogether, your `.env` file should just look like so:
 
 ```
-REACT_APP_ALCHEMY_KEY = https://eth-ropsten.alchemyapi.io/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = wss://eth-ropsten.ws.alchemyapi.io/v2/<key>
 ```
 4. Run `npm start`in your terminal to open the dApp in your browswer at http://localhost:3000/.
 
