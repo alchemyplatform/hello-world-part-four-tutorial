@@ -18,24 +18,40 @@ const HelloWorld = () => {
   const [newMessage, setNewMessage] = useState("");
 
   //called only once
-  useEffect(async () => {
-    
+  //called only once
+  useEffect(() => {
+    async function fetchMessage() {
+      const message = await loadCurrentMessage();
+      setMessage(message);
+    }
+    fetchMessage();
+    addSmartContractListener();
   }, []);
 
-  function addSmartContractListener() { //TODO: implement
-    
+  function addSmartContractListener() {
+    helloWorldContract.events.UpdatedMessages({}, (error, data) => {
+      if (error) {
+        setStatus("😥 " + error.message);
+      } else {
+        setMessage(data.returnValues[1]);
+        setNewMessage("");
+        setStatus("🎉 Your message has been updated!");
+      }
+    });
   }
 
   function addWalletListener() { //TODO: implement
-    
+
   }
 
-  const connectWalletPressed = async () => { //TODO: implement
-    
+  const connectWalletPressed = async () => {
+    const walletResponse = await connectWallet();
+    setStatus(walletResponse.status);
+    setWallet(walletResponse.address);
   };
 
   const onUpdatePressed = async () => { //TODO: implement
-    
+
   };
 
   //the UI of our component
